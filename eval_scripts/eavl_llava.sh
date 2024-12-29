@@ -1,0 +1,1 @@
+python inference_batch.py --model_name llava_onevision --prediction_file output/llava_onevision.json --sample_num 1 --temperature 0

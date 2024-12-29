@@ -1,0 +1,1 @@
+python inference_batch.py --model_name qwen2_vl --prediction_file output/qwen2_vl.json --sample_num 1 --temperature 0

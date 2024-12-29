@@ -1,0 +1,1 @@
+python inference_batch.py --model_name cpm2_6 --prediction_file output/cpm2_6.json --sample_num 1 --temperature 0

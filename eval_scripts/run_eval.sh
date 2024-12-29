@@ -1,0 +1,1 @@
+python evaluate.py --prediction_file output/gpt_4o.json

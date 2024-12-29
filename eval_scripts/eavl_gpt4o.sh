@@ -1,0 +1,1 @@
+python inference.py --model_name openai_azure --prediction_file output/gpt_4o.json --sample_num 1 --temperature 0
