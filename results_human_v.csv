@@ -3,4 +3,5 @@ llama3_vision,0.0,54.6
 gpt_4o,17.6,100.0
 qwen2_vl,0.9,90.7
 llava_onevision,0.0,84.3
+qwen2_vl_sft,0.9,90.7
 cpm2_6,0.0,96.3

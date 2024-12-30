@@ -31,7 +31,7 @@ You are an exceptionally intelligent coding assistant that consistently delivers
 ```
 '''
 
-def main(model_name, sample_num, prediction_file, temperature=None):  
+def main(model_name, sample_num, prediction_file, model_path=None, temperature=None):  
     results = load_json(prediction_file)  
     existing_qids = {result['qid'] for result in results}  
   
@@ -39,7 +39,12 @@ def main(model_name, sample_num, prediction_file, temperature=None):
         temperature = 0 if sample_num == 1 else 0.8  
   
     print("Start querying LMM...")  
-    model = load_model_class(model_name)()  
+    if model_path:
+        print(f"Loading model from {model_path}")
+        model = load_model_class(model_name)(model_path)
+    else:
+        print("No model path provided. Using default model path.")
+        model = load_model_class(model_name)()  
   
     # Prepare batches  
     batch_size = 32  # You can adjust the batch size as needed  

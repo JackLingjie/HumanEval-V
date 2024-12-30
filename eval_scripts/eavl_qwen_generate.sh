@@ -1,0 +1,1 @@
+python inference_batch.py --model_name qwen2_vl --prediction_file output/qwen2_vl_sft.json --sample_num 1 --temperature 0 --model_path /mnt/lingjiejiang/multimodal_code/sft_checkpoints/qwen2_vl-7b_3072_bsz8_web2code
